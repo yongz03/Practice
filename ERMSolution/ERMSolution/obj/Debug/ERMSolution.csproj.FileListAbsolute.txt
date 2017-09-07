@@ -1,0 +1,12 @@
+D:\Projects\ERMSolution\ERMSolution\bin\Debug\ERMSolution.exe.config
+D:\Projects\ERMSolution\ERMSolution\bin\Debug\ERMSolution.exe
+D:\Projects\ERMSolution\ERMSolution\bin\Debug\ERMSolution.pdb
+D:\Projects\ERMSolution\ERMSolution\obj\Debug\ERMSolution.exe
+D:\Projects\ERMSolution\ERMSolution\obj\Debug\ERMSolution.pdb
+D:\Projects\ERMSolution\ERMSolution\obj\Debug\ERMSolution.csprojResolveAssemblyReference.cache
+C:\Users\Yong Zhang\Downloads\ERMSolution\ERMSolution\bin\Debug\ERMSolution.exe.config
+C:\Users\Yong Zhang\Downloads\ERMSolution\ERMSolution\obj\Debug\ERMSolution.exe
+C:\Users\Yong Zhang\Downloads\ERMSolution\ERMSolution\obj\Debug\ERMSolution.pdb
+C:\Users\Yong Zhang\Downloads\ERMSolution\ERMSolution\bin\Debug\ERMSolution.exe
+C:\Users\Yong Zhang\Downloads\ERMSolution\ERMSolution\bin\Debug\ERMSolution.pdb
+C:\Users\Yong Zhang\Downloads\ERMSolution\ERMSolution\obj\Debug\ERMSolution.csprojResolveAssemblyReference.cache
