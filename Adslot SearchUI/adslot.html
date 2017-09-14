@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="searchApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search UI</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/searchUI.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+<form name="searchForm" role="form" class="search-form">
+<div ng-controller="searchController" class="container-fluid">
+    <header class="panel panel-default row">
+        <div class="col-md-3 col-md-offset-2">
+            <h3 class="text-center"><img src="imgs/adslot.png" class="img-responsive"></h3>
+        </div>
+        <div class="col-md-2 col-md-offset-5">
+            <h3 class="glyphicon glyphicon-remove text-center table-bordered"></h3>
+        </div>
+    </header>
+
+    <div class="row row-body form-group">
+        <div class="input-group row-body_input">
+            <input type="text" class="form-control" ng-model="search.query" name="searchQuery" placeholder="Search Publishers" role="textbox" autofocus/>
+            <div class="input-group-addon">
+                <span class="glyphicon glyphicon-search"></span>
+            </div>
+        </div>
+        <div ng-repeat="site in search.extendedSites | siteSearch : search.query" class="col-md-6 col-md-offset-2 row-body_content">
+            <div><a href="{{site.siteUrl}}" ng-click="redirectToUrl(site.siteUrl)" target="_blank">{{site.siteUrl}}</a></div>
+            <div>{{site.description}}</div>
+        </div>
+        <div ng-show="!((search.extendedSites | siteSearch : search.query).length) && queryValidDirty()" class="col-md-6 col-md-offset-6 row-body_no-content">
+            <p>We currently don’t have any results for your search, try another.</p>
+        </div>
+    </div>
+
+    <footer class="row row-footer">
+        <div class="col-md-offset-5 row-footer_logo">
+            <h3><img src="imgs/adslot-inverse.png" class="img-responsive"></h3>
+        </div>
+        <hr class="row-footer_hr"/>
+        <div class="text-center">
+            <ul class="list-inline list-unstyled">
+                <li><a href="#">&copy;2012 Adslot</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">Adslot publisher</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">Adslot create</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">Payment Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+</form>
+</body>
+</html>

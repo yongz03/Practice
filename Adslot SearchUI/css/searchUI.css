@@ -1,0 +1,85 @@
+.search-form
+{
+    background-color: rgb(238,238,238);
+    margin-left:70px;
+    margin-top:30px;
+    width:90%;
+    font-size: 18px;
+}
+.row-body
+{
+    height: 700px;
+}
+
+.row-body input[type="text"]
+{
+    height:60px;
+    font-size: 18px;
+    border-right: none;
+}
+
+input[type="text"]:focus
+{
+    outline-style:none;
+    box-shadow:none;
+}
+
+.row-body_input
+{
+    width:68%;
+    padding-left:15px;
+    margin-left:290px;
+}
+
+.row-footer
+{
+    position: absolute;
+    bottom: 30px;
+    background-color: black;
+    width:90%;
+    height:120px;
+}
+.row-footer_hr
+{
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.row-footer_logo
+{
+    padding-left:80px;
+}
+
+ul li a {
+    color: gray;
+    font-size: 11px;
+    font-family: Helvetica;
+    display: inline-block;
+}
+.row-body_content{
+    padding-left:25px;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.row-body_no-content
+{
+    padding-left:0;
+    margin-top:20px;
+    margin-left: 450px;
+    border: solid 1px black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.row-body_no-content p
+{
+    margin: 10px 0 0 0;
+}
+
+div.input-group-addon
+{
+    background-color: white;
+}
