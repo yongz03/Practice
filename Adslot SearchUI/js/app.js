@@ -31,7 +31,7 @@ searchApp.filter('siteSearch', function()
     }
  });
 
-searchApp.controller("searchController", ['$scope', '$window', function($scope, $window)
+searchApp.controller("searchController", ['$scope', '$window', 'siteSearchFilter', function($scope, $window, siteSearchFilter)
 {
     var sites = [
         {
@@ -111,6 +111,11 @@ searchApp.controller("searchController", ['$scope', '$window', function($scope, 
         });
         $scope.search.extendedSites.push(extendedSite);
     });
+
+    $scope.search.filteredSites = function()
+    {
+        return siteSearchFilter($scope.search.extendedSites, $scope.search.query);
+    }
 
     $scope.redirectToUrl = function(url)
     {
