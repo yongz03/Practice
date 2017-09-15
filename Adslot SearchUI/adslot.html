@@ -31,11 +31,11 @@
                 <span class="glyphicon glyphicon-search"></span>
             </div>
         </div>
-        <div ng-repeat="site in search.extendedSites | siteSearch : search.query" class="col-md-6 col-md-offset-2 row-body_content">
+        <div ng-repeat="site in search.filteredSites()" class="col-md-6 col-md-offset-2 row-body_content">
             <div><a href="{{site.siteUrl}}" ng-click="redirectToUrl(site.siteUrl)" target="_blank">{{site.siteUrl}}</a></div>
             <div>{{site.description}}</div>
         </div>
-        <div ng-show="!((search.extendedSites | siteSearch : search.query).length) && queryValidDirty()" class="col-md-6 col-md-offset-6 row-body_no-content">
+        <div ng-show="!search.filteredSites().length && queryValidDirty()" class="col-md-6 col-md-offset-6 row-body_no-content">
             <p>We currently don’t have any results for your search, try another.</p>
         </div>
     </div>
